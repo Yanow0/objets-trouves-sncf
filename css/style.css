@@ -1,0 +1,19 @@
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#bg-image{
+    margin: -125px 0 -400px 0;
+}
+
+#results span a {
+    text-decoration: none;
+}
+
+.navbar {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
