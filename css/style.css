@@ -17,3 +17,9 @@ body{
     -ms-transition: all 0.6s ease-out;
     transition: all 0.6s ease-out;
 }
+
+#obligatoire{
+    font-size: 10px;
+    color: grey;
+    font-style: italic;
+}

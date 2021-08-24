@@ -47,6 +47,7 @@
 
 <div class="container">
 
+    <div class="w-75 m-auto my-3">Si vous trouvez un objet vous appartenant parmis la liste des objets trouvés, vous devez vous rendre à la gare où il a été perdu pour le récupérer.</div>
 
     <div id="searchobjet" action="" method="post" class="m-auto w-75 p-5 bg-white">
         <div class="mb-3 form-group">
@@ -61,7 +62,7 @@
         </div>
 
         <div class="mb-3 form-group">
-            <label for="date" class="">Date :</label>
+            <label for="date" class="">Date : *</label>
             <input id="date" class="mt-2 form-control" type="text" name="date" onfocus="(this.type='date')"
                    onblur="if(!this.value)this.type='text'">
 
@@ -76,6 +77,8 @@
                 </div>
             </div>
         </div>
+
+        <div id="obligatoire" class="my-2">* Seul le champ date est obligatoire</div>
 
         <button class="btn btn-primary" id="rechercher">Rechercher</button>
 

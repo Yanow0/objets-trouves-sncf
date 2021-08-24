@@ -39,7 +39,7 @@ $(function () {
 
             if (gare == '') {
                 $.ajax({
-                    url: "https://ressources.data.sncf.com/api/records/1.0/search/?dataset=objets-trouves-restitution&facet=gc_obo_date_heure_restitution_c,gc_obo_nature_c,gc_obo_type_c,gc_obo_nom_recordtype_sc_c,refine.gc_obo_gare_origine_r_code_uic_c&refine.date=" + date + "&q=" + type + "&rows=20",
+                    url: "https://ressources.data.sncf.com/api/records/1.0/search/?dataset=objets-trouves-restitution&sort=date&facet=gc_obo_date_heure_restitution_c,gc_obo_nature_c,gc_obo_type_c,gc_obo_nom_recordtype_sc_c,refine.gc_obo_gare_origine_r_code_uic_c&refine.date=" + date + "&q=" + type + "&rows=20",
                     dataType: "jsonp",
                     success: function (res) {
 
@@ -92,7 +92,7 @@ $(function () {
                             //console.log(code_gare);
 
                             $.ajax({
-                                url: "https://ressources.data.sncf.com/api/records/1.0/search/?dataset=objets-trouves-restitution&facet=gc_obo_date_heure_restitution_c,gc_obo_nature_c,gc_obo_type_c,gc_obo_nom_recordtype_sc_c,refine.gc_obo_gare_origine_r_code_uic_c&refine.gc_obo_gare_origine_r_code_uic_c=" + code_gare + "&refine.date=" + date + "&q=" + type + "&rows=20",
+                                url: "https://ressources.data.sncf.com/api/records/1.0/search/?dataset=objets-trouves-restitution&sort=date&facet=gc_obo_date_heure_restitution_c,gc_obo_nature_c,gc_obo_type_c,gc_obo_nom_recordtype_sc_c,refine.gc_obo_gare_origine_r_code_uic_c&refine.gc_obo_gare_origine_r_code_uic_c=" + code_gare + "&refine.date=" + date + "&q=" + type + "&rows=20",
                                 dataType: "jsonp",
                                 success: function (res) {
 
